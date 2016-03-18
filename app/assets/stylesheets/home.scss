@@ -1,0 +1,97 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+.image-bg-fluid-height {
+    // background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+    background: image-url("mid.png") no-repeat center center;
+    padding: 100px 0;
+    min-height: 311px;
+}
+
+.intro-message {
+    position: relative;
+    text-align: center;
+    bottom: 210px;
+    margin-right: 145px;
+  }
+
+  h3.h3-banner {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+h2.h2-banner {
+    color: #fff;
+    margin-left: 195px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+header {
+    height: 334px;
+}
+
+.col-lg-2.right {
+    margin-top: 23px;
+}
+
+.col-lg-12.right-top {
+    height: 182px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.col-lg-12.right-top2 {
+    height: 182px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.col-lg-9.middle {
+  background-color: #fff;
+  min-height: 400px;
+  margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    color: #9B9B9B;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+
+span.sp-r1 {
+    margin-left: 40px;
+}
+
+section.sec-2 {
+    padding-bottom: 20px;
+}
+
+.font-w-200 {
+  font-weight: 200;
+}
+
+.img{border-top:4px solid red;}
+
+@font-face {
+    font-family: 'AvenirLTStd';
+    src: url('/assets/avenirltstd-light.otf');
+}
+
+
+
+// mobile
+
+@media screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
+  
+}
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+//
+// }

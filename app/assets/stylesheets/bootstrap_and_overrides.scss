@@ -1,0 +1,26 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// body
+body {
+  background-color: #f9f9f9;
+}
+
+// Navbar
+img.img-tryit {
+    width: 84px;
+    margin-top: 10px;
+}
+.container-fluid.nav {
+    padding-left: 141px;
+}
+.navbar-default {
+    height: 65px;
+    margin-bottom: 0px;
+}
+input.form-control.ser {
+    width: 350px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-left: 10px;
+}

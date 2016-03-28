@@ -1,0 +1,56 @@
+%header
+  .image-bg-fluid-height
+  -# .intro-message
+    %h2.h2-banner Start Exploring STEM
+    %h2.h2-banner Science | Tech | Engineering | Math
+.container-fluid
+  .row.main
+    .col-lg-2.right.desktop
+      #close
+        %section.sec-2
+          %span.sp-r1
+            %b Home
+          %hr
+          %ul.ul-left1
+            %li Online
+            %li In-person
+            %li Collections
+        %section.sec-2
+          %span.sp-r1
+            %b CATEGORIES
+          %hr
+          %ul.ul-left2
+            %b STEM:
+            %br
+            Science, Technology,
+            %br
+            Engneering & Math
+        %section.sec-3
+          %span.sp-r3
+            %b Coming Soon:
+          %hr
+          %ul.ul-left3
+            %li Arts & Design
+            %li Business
+    .col-lg-10.desktop
+      = render 'homePartial2'
+    .col-xs-12.middle.mobile
+      %h4.font-w-200 TODAY
+      %h5.font-w-200 POPULAR
+      %br
+      %hr
+      %row
+        .col-xs-4
+          = image_tag("bitmap@3x2.png", class: "img-middle-div")
+        .col-xs-8
+          .col-xs-12.title
+            %h4.h4-title Top 3 TED Medical Talks of All Time
+          .col-xs-12.substitle
+            %h5.h5-subtitle The most viewed talks on health & medicine
+          .col-xs-12.buttons
+            .col-xs-6.col-upvote
+              %button{:class => 'btn btn-default upvote', :type => 'button'}
+                Upvote
+            .col-xs-6.col-share
+              %button{:class => 'btn btn-primary share', :type => 'button'}
+                Share

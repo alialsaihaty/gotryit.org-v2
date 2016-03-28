@@ -3,67 +3,79 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .image-bg-fluid-height {
     // background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
-    background: image-url("mid.png") no-repeat center center;
+    background: image-url("TryIt_V1.5_banner_image5_forweb.jpg") no-repeat center center;
+    background-size: 100%;
     padding: 100px 0;
     min-height: 311px;
+}
+.leftsidebarfixed {
+    position: fixed;
+    top: 0;
 }
 
 .intro-message {
     position: relative;
     text-align: center;
     bottom: 210px;
-    margin-right: 145px;
   }
 
-  h3.h3-banner {
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 100;
-    letter-spacing: 1px;
-}
-
-h2.h2-banner {
-    color: #fff;
-    margin-left: 195px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 100;
-    letter-spacing: 1px;
-}
+// h3.h3-banner {
+//     color: #fff;
+//     font-family: 'Nunito', sans-serif;
+//     font-weight: 100;
+//     letter-spacing: 1px;
+// }
+//
+// h2.h2-banner {
+//     color: #fff;
+//     // margin-left: 195px;
+//     font-family: 'Nunito', sans-serif;
+//     font-weight: 100;
+//     letter-spacing: 1px;
+// }
 
 header {
     height: 334px;
 }
 
-.col-lg-2.right {
+.right {
     margin-top: 23px;
 }
 
-.col-lg-12.right-top {
+.right-top {
     height: 182px;
     background-color: #fff;
     margin-top: 20px;
 }
 
-.col-lg-12.right-top2 {
+.right-top2 {
     height: 182px;
     background-color: #fff;
     margin-top: 20px;
 }
 
-.col-lg-9.middle {
+.middle {
   background-color: #fff;
-  min-height: 400px;
+  min-height: 800px;
   margin-top: 20px;
 }
-
-ul {
+ul.ul-left1 {
+    color: #9B9B9B;
+    letter-spacing: 0.3px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
     list-style-type: none;
+}
+
+ul.ul-left2 {
     color: #9B9B9B;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
+    font-size: 10px;
 }
 
 span.sp-r1 {
@@ -78,20 +90,189 @@ section.sec-2 {
   font-weight: 200;
 }
 
-.img{border-top:4px solid red;}
+h4.font-w-200 {
+    display: inline;
+    float: left;
+}
+h5.font-w-200 {
+    display: inline;
+    float: right;
+}
+
+// .img{border-top:4px solid red;}
+
+
+button.btn.btn-primary.share {
+    width: 58px;
+    height: 21px;
+    font-size: 11.5px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    background-color: #5190e0;
+    border-color: #5190e0;
+    padding-top: 3px;
+    // font-family: AvenirNextLTPro-Regular;
+}
+button.btn.btn-default.upvote {
+    width: 69px;
+    height: 21px;
+    font-size: 11.3px;
+    letter-spacing: 0.4px;
+    color: #4a90e2;
+    padding-top: 2px;
+    // font-family: AvenirNextLTPro-Regular;
+}
+img.img-middle-div {
+    width: 114px;
+    height: 114px;
+}
+h4.h4-title {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #4a4a4a;
+}
+h5.h5-subtitle {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #9b9b9b;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+}
+
 
 @font-face {
     font-family: 'AvenirLTStd';
     src: url('/assets/avenirltstd-light.otf');
 }
 
-
+.mobile {
+  display: none;
+}
 
 // mobile
 
 @media screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
-  
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .container-fluid.nav {
+    padding-left: 30px;
+  }
+  input.form-control.ser {
+    width: 101px;
+    margin-top: -1px;
+  }
+  .navbar-form {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px;
+    border-top: none;
+    border-bottom: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    display: inline-block;
+  }
+  .image-bg-fluid-height {
+    background: image-url("TryIt_V1.5_banner.jpg") no-repeat center center;
+  }
+  img.img-middle-div {
+    width: 100px;
+    height: 100px;
+  }
+  h4.h4-title {
+    margin-top: 0;
+  }
+  .col-xs-12.title {
+    width: 220px;
+  }
+  h5.h5-subtitle {
+    margin-top: 0;
+  }
+  .dropdown-menu {
+    min-width: auto;
+  }
+  // ul.dropdown-menu.dropdown-brand {
+  //   background-color: #f8f8f8 !important;
+  //   width: 120px !important;
+  // }
+  a.navbar-brand.dropdown-toggle {
+    // width: 100px !important;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    padding-left: 4px;
+  }
+  .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #f8f8f8;
+    border-color: #337ab7;
+  }
+  ul.dropdown-menu {
+    margin-top: 71px;
+    margin-left: 6px;
+    border-radius: 7px;
+  }
+
+  .dropdown-menu:after{
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  }
+
+  .dropdown-menu:after {
+  	border-color: rgba(136, 183, 213, 0);
+  	border-bottom-color: #fff;
+  	border-width: 9px;
+  	margin-left: -41px;
+  }
+  img.img-tryit {
+    width: 55px;
+    margin-top: -2px;
+    display: inline-block;
+  }
+  .dropdown-menu > li > a {
+    color: #c3c3c3;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    margin-top: 19px;
+  }
+  .login {
+    float: right;
+    margin-top: 29px;
+    color: #9b9b9b;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-family: 'Nunito', sans-serif;
+  }
 }
 // @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 //
 // }
+
+
+img.img {
+    width: 99%;
+}
+
+.substitle {
+    color: #9b9b9b;
+    width: 264px;
+}
+.col-upvote {
+    padding-left: 0;
+}
+.buttons {
+    padding-left: 0;
+}
+.col-share {
+    padding-left: 0;
+}

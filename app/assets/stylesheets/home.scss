@@ -6,7 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .image-bg-fluid-height {
-    // background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
     background: image-url("TryIt_V1.5_banner_image5_forweb.jpg") no-repeat center center;
     background-size: 100%;
     padding: 100px 0;
@@ -108,6 +107,7 @@ section.sec-2 {
 h4.font-w-200 {
     display: inline;
     float: left;
+    padding-left: 15px;
 }
 h5.font-w-200 {
     display: inline;
@@ -171,9 +171,10 @@ h5.h5-subtitle {
 .mobile {
   display: none;
 }
-// a.login {
-//   display: none;
-// }
+.navbar-form {
+  border-top: none;
+  border-bottom: none;
+}
 
 // mobile
 
@@ -269,7 +270,7 @@ h5.h5-subtitle {
     display: inline-block;
   }
   .dropdown-menu > li > a {
-    color: #c3c3c3;
+    color: #999999;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
   }
@@ -284,6 +285,9 @@ h5.h5-subtitle {
     font-size: 12px;
     letter-spacing: 0.4px;
     font-family: 'Nunito', sans-serif;
+  }
+  img.img-tryit2 {
+    width: 25% !important;
   }
 }
 
@@ -337,13 +341,32 @@ h5.h5-subtitle {
     letter-spacing: 0.4px;
     font-family: 'Nunito', sans-serif;
   }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    margin-top: 19px;
-  }
 }
 
-
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  margin-top: 19px;
+}
+a.login-1 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #777677;
+    margin-top: 20px;
+    display: inline-block;
+}
+img.img-icon {
+    float: right;
+    margin-right: 70px;
+    width: 21%;
+    margin-top: 16px;
+}
+img.img-icon1 {
+    float: right;
+    margin: 28px 10px 0 10px;
+}
+.navbar-form .form-control{
+  display: inline-block;
+}
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)  {
   .substitle {
     width: 191px !important;
@@ -357,10 +380,51 @@ h5.h5-subtitle {
   .image-bg-fluid-height {
     background-size: cover;
   }
+
 }
 
+@media (min-width: 480px) and (max-width: 766px) {
+  input.form-control.ser {
+    width: 257px;
+  }
+  form.navbar-form.navbar-right {
+    display: inline-block;
+  }
+  img.img-tryit {
+    margin-bottom: 13px;
+  }
+  button.navbar-toggle.collapsed {
+    margin-top: 21px;
+  }
+  ul.nav.navbar-nav.navbar-right {
+    float: right !important;
+  }
+  .navbar-header {
+    display: inline-block;
+  }
+  .container-fluid.nav {
+    padding-left: 22px;
+  }
+  span.sp-r1 {
+    margin-left: 0px;
+  }
+  span.sp-r2 {
+    margin-left: 0px;
+  }
+  ul.ul-left1 {
+    padding-left: 0px;
+  }
+  ul.ul-left2 {
+    padding-left: 0px;
+  }
+  h5.right-titles {
+    font-size: 10px;
+  }
+}
 
-
+form.navbar-form.navbar-right {
+    background-color: none;
+}
 img.img {
     width: 99%;
 }
@@ -385,7 +449,6 @@ img.img {
 // about us
 
 img.img-tryit2 {
-    margin: 90px auto auto;
     display: block;
     width: 8%;
     margin: 90px auto 35px auto;

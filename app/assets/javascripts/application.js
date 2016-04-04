@@ -15,3 +15,13 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+
+  $('#close').affix({
+    offset: {
+        top: $('#close').offset().top
+    }
+  });
+});

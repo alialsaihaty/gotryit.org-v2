@@ -1,28 +1,53 @@
-.col-xs-9.middle
-  %h4.font-w-200 TODAY
-  %h5.font-w-200 POPULAR
-  %br
-  %hr
-  %row
-    .col-xs-4.col-lg-3
-      = image_tag("bitmap@3x2.png", class: "img-middle-div")
-    .col-xs-8.col-lg-9
-      .col-xs-12.title
-        %h4.h4-title Top 3 TED Medical Talks of All Time
-      .col-xs-12.substitle
-        %h5.h5-subtitle The most viewed talks on health & medicine
-      .col-xs-12
-        .col-xs-12.col-lg-4.buttons
-          .col-xs-6.col-upvote
-            %button{:class => 'btn btn-default upvote', :type => 'button'}
-              Upvote
-          .col-xs-6.col-share
-            %button{:class => 'btn btn-primary share', :type => 'button'}
-              Share
-.col-xs-3
+.col-xs-8.col-sm-12.col-md-8.col-lg-8.middle
+  .mid-top
+    %h4.font-w-200 TODAY
+    %h5.font-w-200 POPULAR
+  -# %br
+  -# %hr
+  .mid-second
+    %ul.list-middle
+      %li
+        .mid-div
+          %row.mid-row
+            .col-xs-4.col-lg-3
+              = image_tag("bitmap@3x2.png", class: "img-middle-div")
+            .col-xs-8.col-lg-9
+              .col-xs-12.title
+                %h4.h4-title Top 3 TED Medical Talks of All Time
+              .col-xs-12.substitle
+                %h5.h5-subtitle The most viewed talks on health & medicine
+              .col-xs-12
+                -# .col-xs-12.col-lg-4.buttons
+                .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
+                  %button{:class => 'btn btn-primary upvote', :type => 'button'}
+                    Upvote
+                -# .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-share
+                -#   %button{:class => 'btn btn-primary share', :type => 'button'}
+                -#     Share
+      %li
+        .mid-div
+          %row.mid-row
+            .col-xs-4.col-lg-3
+              = image_tag("bitmap@3x2.png", class: "img-middle-div")
+            .col-xs-8.col-lg-9
+              .col-xs-12.title
+                %h4.h4-title Top 3 TED Medical Talks of All Time
+              .col-xs-12.substitle
+                %h5.h5-subtitle The most viewed talks on health & medicine
+              .col-xs-12
+                -# .col-xs-12.col-lg-4.buttons
+                .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
+                  %button{:class => 'btn btn-primary upvote', :type => 'button'}
+                    Upvote
+.col-xs-3.hidden-sm
   .col-xs-12.right-top
-    %h5.right-titles FEATURED EXPERIENCES
-    %hr
-  .col-xs-12.right-top2
-    %h5.right-titles TOP COLLECTIONS
-    %hr
+    .left-top
+      %h5.right-titles FEATURED EXPERIENCES
+    .left-top2
+      = image_tag("tryit-partner-logos-v-20.png", class: "img-partner")
+    .left-top
+      %h5.right-titles TOP COLLECTIONS
+    .left-top2
+      = image_tag("square_workplace_image_forweb.png", class: "img-colle")
+      = image_tag("female-trades-apprentice.png", class: "img-colle")
+      = image_tag("bitmap@3x2.png", class: "img-colle")

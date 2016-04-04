@@ -365,9 +365,6 @@ h5.h5-subtitle {
   .intro-message {
     bottom: 185px;
   }
-  // .col-xs-12.middle.mobile {
-  //   margin-top: -94px;
-  // }
 }
 
 .navbar-default .navbar-toggle {
@@ -665,6 +662,12 @@ img.img-partner {
   }
   .navbar-header {
     float: none;
+  }
+}
+
+@media (min-width:399px) and (max-width:480px) {
+  .intro-message {
+    display: none;
   }
 }
 

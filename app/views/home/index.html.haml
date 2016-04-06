@@ -5,7 +5,7 @@
     %p.p-banner2 SCIENCES | TECH | ENGINEERING | MATH
 .container
   .row.main
-    .col-xs-2.col-sm-3.col-md-2.col-lg-2.col-xs-offset-1.left.desktop
+    .col-xs-2.col-sm-3.col-md-2.col-lg-2.col-xs-offset-0.left.desktop
       #close{:data => { :spy => 'affix'}}
         %hr.left-hr
           %ul.ul-left1
@@ -16,18 +16,17 @@
       = render 'homePartial'
     .col-xs-12.middle.mobile
       .mid-top
-        %h4.font-w-200 TODAY
-        %h5.font-w-200 POPULAR
+        %h4.font-w-200 Today
       .mid-second
         %ul.list-middle
           %li
             .mid-div
               %row.mid-row
-                .col-xs-4
+                .col-xs-4.col-sm-3
                   = image_tag("bitmap@3x2.png", class: "img-middle-div")
-                .col-xs-8
+                .col-xs-8.col-sm-9
                   .col-xs-12.title
-                    %h4.h4-title Top 3 TED Medical Talks of All Time
+                    %h4.h4-title Volunteer Online with the United Nations
                   .col-xs-12.substitle
                     %h5.h5-subtitle The most viewed talks on health & medicine
                   .col-xs-12
@@ -37,15 +36,14 @@
           %li
             .mid-div
               %row.mid-row
-                .col-xs-4
+                .col-xs-4.col-sm-3
                   = image_tag("bitmap@3x2.png", class: "img-middle-div")
-                .col-xs-8
+                .col-xs-8.col-sm-9
                   .col-xs-12.title
-                    %h4.h4-title Top 3 TED Medical Talks of All Time
+                    %h4.h4-title Volunteer Online with the United Nations
                   .col-xs-12.substitle
                     %h5.h5-subtitle The most viewed talks on health & medicine
                   .col-xs-12
-                    -# .col-xs-12.col-lg-4.buttons
                     .col-xs-6.col-upvote
                       %button{:class => 'btn btn-primary upvote', :type => 'button'}
                         Upvote

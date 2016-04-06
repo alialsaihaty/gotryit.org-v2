@@ -39,7 +39,8 @@
 }
 
 img.img-colle {
-    width: 92%;
+    width: 160px;
+    height: 160px;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
@@ -116,30 +117,15 @@ section.sec-2 {
     padding-bottom: 20px;
 }
 
-.font-w-200 {
-  font-weight: 200;
-}
-
 h4.font-w-200 {
     display: inline;
     float: left;
     padding-left: 15px;
+    font-weight: 500px;
+    letter-spacing: 0.6px;
+    color: #4a4a4a;
+    font-family: 'Nunito', sans-serif;
 }
-h5.font-w-200 {
-    display: inline;
-    float: right;
-}
-h5.font-w1-200 {
-    display: inline;
-    font-size: 11px;
-	  letter-spacing: 0.3px;
-	  color: #9b9b9b;
-    position: relative;
-    top: 10px;
-    left: 40px
-}
-// .img{border-top:4px solid red;}
-
 
 button.btn.btn-primary.share {
     width: 58px;
@@ -222,7 +208,7 @@ h5.h5-subtitle {
     display: inline-block;
   }
   .image-bg-fluid-height {
-    background: image-url("TryIt_V1.5_banner.jpg") no-repeat center center;
+    background: image-url("Tryit_banner_v2.0.jpg") no-repeat center center;
   }
   img.img-middle-div {
     width: 100px;
@@ -235,7 +221,7 @@ h5.h5-subtitle {
     width: 220px;
   }
   .substitle {
-      width: 236px !important;
+      width: 223px !important;
   }
   h5.h5-subtitle {
     margin-top: 0;
@@ -453,6 +439,8 @@ img.img-icon1 {
 h5.right-titles {
   font-size: 10px;
   font-weight: bold;
+  display: block;
+  margin: 0 auto;
 }
 
 form.navbar-form.navbar-right {
@@ -602,6 +590,15 @@ ul.list-middle {
   .substitle {
     width: 216px;
   }
+  h4.font-w-200 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  input.form-control.ser {
+    margin-right: 155px;
+    margin-top: 11px;
+  }
 }
 
 img.img-partner {
@@ -667,7 +664,7 @@ img.img-partner {
 
 @media (min-width:399px) and (max-width:480px) {
   .intro-message {
-    display: none;
+    // display: none;
   }
 }
 
@@ -680,6 +677,11 @@ img.img-partner {
   }
   .mobile {
     display: block;
+  }
+  h4.font-w-200 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 2px;
   }
   .navbar-header {
     display:block;
@@ -708,6 +710,12 @@ img.img-partner {
   .intro-message {
     bottom: 185px;
   }
+  .p-banner {
+	  font-size: 24px;
+  }
+  .p-banner2 {
+    font-size: 13px;
+  }
 }
 
 
@@ -715,7 +723,7 @@ img.img-partner {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
   .intro-message {
-    display: none;
+    // display: none;
   }
   .mid-div {
     padding: 25px 0;
@@ -724,6 +732,10 @@ img.img-partner {
     margin-left: -13px;
   }
   h4.h4-title {
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 1.1;
+	  letter-spacing: 0.6px;
+	  color: #202020;
+    font-family: 'Nunito', sans-serif;
   }
 }

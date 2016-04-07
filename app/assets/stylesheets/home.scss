@@ -173,7 +173,7 @@ h5.h5-subtitle {
     letter-spacing: 0.4px;
     color: #9b9b9b;
     font-family: 'Nunito', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 
@@ -204,7 +204,7 @@ h5.h5-subtitle {
   }
   input.form-control.ser {
     width: 101px;
-    margin-top: -1px;
+    margin-top: 2px;
   }
   .col-upvote {
     padding-left: 13px !important;
@@ -246,8 +246,7 @@ h5.h5-subtitle {
   //   width: 120px !important;
   // }
   a.navbar-brand.dropdown-toggle {
-    // width: 100px !important;
-    margin-top: 10px;
+    margin-top: 6px;
     background-color: #f8f8f8;
     padding-left: 4px;
   }
@@ -384,7 +383,7 @@ img.img-icon {
 }
 img.img-icon1 {
     float: right;
-    margin: 28px 10px 0 10px;
+    margin: 27px 10px 0 10px;
 }
 .navbar-form .form-control{
   display: inline-block;
@@ -598,13 +597,14 @@ ul.list-middle {
     padding: 25px 0;
   }
   h5.h5-subtitle {
-    font-size: 11px;
+    font-size: 12px;
+    margin-top: 0;
   }
   h4.h4-title {
-    font-size: 12px;
+    font-size: 18px;
   }
   .substitle {
-    width: 216px;
+    // width: 216px;
   }
   h4.font-w-200 {
     font-size: 20px;
@@ -614,6 +614,9 @@ ul.list-middle {
   input.form-control.ser {
     margin-right: 155px;
     margin-top: 11px;
+  }
+  hr.left-hr {
+    margin-left: 16px;
   }
 }
 
@@ -657,7 +660,7 @@ img.img-partner {
   }
   .login {
     float: right;
-    margin-top: 29px;
+    margin-top: 28px;
     color: #9b9b9b;
     font-size: 12px;
     letter-spacing: 0.4px;
@@ -736,9 +739,6 @@ img.img-partner {
 // Iphone 5 portrait
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  .intro-message {
-    // display: none;
-  }
   .mid-div {
     padding: 25px 0;
   }
@@ -746,10 +746,24 @@ img.img-partner {
     margin-left: -13px;
   }
   h4.h4-title {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.1;
 	  letter-spacing: 0.6px;
 	  color: #202020;
     font-family: 'Nunito', sans-serif;
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width : 1000px){
+  .ul-left1 {
+    padding-left: 50px;
+  }
+  hr.left-hr {
+    margin-left: 51px;
+  }
+  h4.h4-title {
+    font-size: 16px;
   }
 }

@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'haml'
 gem 'bootstrap-sass'
-
+gem "font-awesome-rails"
 
 
 group :development, :test do

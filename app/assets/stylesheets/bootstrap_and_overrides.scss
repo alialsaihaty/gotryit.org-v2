@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
+@import "font-awesome";
 
 // body
 body {
@@ -24,6 +25,13 @@ input.form-control.ser {
     border-radius: 5px;
     margin-top: 11px;
     margin-left: 10px;
+    padding-left: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 9px;
+    letter-spacing: 0.4px;
+    color: #9b9b9b;
+    font-family: 'Nunito', sans-serif;
 }
 
 .caret {

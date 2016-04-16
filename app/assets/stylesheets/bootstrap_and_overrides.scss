@@ -13,13 +13,15 @@ img.img-tryit {
   margin-top: 14px;
 }
 .container-fluid.nav {
-    padding-left: 141px;
+    padding-left: 134px;
+    padding-right: 134px
 }
 .navbar-default {
     height: 65px;
     margin-bottom: 0px;
 }
 input.form-control.ser {
+    // width: auto;
     width: 346px;
     height: 27px;
     border-radius: 5px;
@@ -32,6 +34,7 @@ input.form-control.ser {
     letter-spacing: 0.4px;
     color: #9b9b9b;
     font-family: 'Nunito', sans-serif;
+    border: solid 1px #f1f1f1;
 }
 
 .caret {
@@ -55,9 +58,19 @@ input.form-control.ser {
  margin-top:8%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   #masthead h1 {
     font-size: 50px;
+  }
+  .container-fluid.nav {
+    padding-left: 175px;
+    padding-right: 113px;
+  }
+}
+@media screen and (min-width: 802px) and (max-width: 896px) {
+  .container-fluid.nav {
+    padding-left: 146px;
+    padding-right: 40px;
   }
 }
 

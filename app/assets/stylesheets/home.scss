@@ -46,6 +46,10 @@
     position: fixed;
     top: 0;
 }
+.collection_list {
+  list-style: none;
+  padding-left: 0;
+}
 
 .intro-message {
     position: relative;
@@ -91,7 +95,7 @@ header {
 }
 
 .right-top2 {
-    height: 182px;
+    height: auto;
     background-color: #fff;
     margin-top: 20px;
 }
@@ -167,15 +171,16 @@ button.btn.btn-primary.share {
 img.img-middle-div {
     @include size(114px);
 }
-h4.h4-title {
+.h4-title {
     @include fonts2(18px, #202020, 100);
     letter-spacing: 0.6px;
     font-family: 'Nunito', sans-serif;
 }
-h5.h5-subtitle {
+.h5-subtitle {
     @include fonts2(12px, #9b9b9b, 500);
     letter-spacing: 0.4px;
     font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
 }
 
 .mobile {
@@ -197,6 +202,7 @@ h5.h5-subtitle {
   }
   .container-fluid.nav {
     padding-left: 30px;
+    padding-right: 30px;
   }
   input.form-control.ser {
     width: 101px;
@@ -221,7 +227,7 @@ h5.h5-subtitle {
   img.img-middle-div {
     @include size(100px);
   }
-  h4.h4-title {
+  .h4-title {
     margin-top: 0;
   }
   .title {
@@ -230,7 +236,7 @@ h5.h5-subtitle {
   .substitle {
     width: 223px !important;
   }
-  h5.h5-subtitle {
+  .h5-subtitle {
     margin-top: 0;
   }
   .dropdown-menu {
@@ -305,6 +311,7 @@ h5.h5-subtitle {
   }
   .container-fluid.nav {
     padding-left: 15px;
+    padding-right: 15px;
   }
   img.img-middle-div {
     @include center(0 auto, block);
@@ -414,6 +421,7 @@ img.img-icon1 {
   }
   .container-fluid.nav {
     padding-left: 22px;
+    padding-right: 22px;
   }
   span.sp-r1 {
     margin-left: 0px;
@@ -563,11 +571,11 @@ ul.list-middle {
   .mid-div {
     padding: 25px 0;
   }
-  h5.h5-subtitle {
+  .h5-subtitle {
     font-size: 12px;
     margin-top: 0;
   }
-  h4.h4-title {
+  .h4-title {
     font-size: 18px;
   }
   h4.font-w-200 {
@@ -576,7 +584,7 @@ ul.list-middle {
     padding-left: 0px;
   }
   input.form-control.ser {
-    margin-right: 155px;
+    margin-right: 116px;
     margin-top: 11px;
   }
   hr.left-hr {
@@ -634,7 +642,8 @@ img.img-partner {
     margin: 72px 22px 0;
   }
   .container-fluid.nav {
-    padding-left: 22px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
   .navbar-header {
     float: none;
@@ -650,6 +659,10 @@ img.img-partner {
   }
   .mobile {
     display: block;
+  }
+  form.navbar-form.navbar-right {
+    padding-left: 0;
+    padding-right: 0;
   }
   .icon-search {
     left: 29% !important;
@@ -701,7 +714,27 @@ img.img-partner {
   .upvote {
     margin-left: -13px;
   }
-  h4.h4-title {
+  .navbar-default {
+    height: 52px;
+  }
+  a.navbar-brand.dropdown-toggle {
+    margin-top: 1px;
+    background-color: #f8f8f8;
+    padding-left: 4px;
+    padding-top: 17px;
+  }
+  form.navbar-form.navbar-right {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3px;
+  }
+  img.img-icon1 {
+    margin: 21px 10px 0 10px;
+  }
+  .login {
+    margin-top: 23px;
+  }
+  .h4-title {
     @include fonts(18px, #202020, 0.6px);
     line-height: 1.1;
     font-family: 'Nunito', sans-serif;
@@ -717,7 +750,7 @@ img.img-partner {
   hr.left-hr {
     margin-left: 51px;
   }
-  h4.h4-title {
+  .h4-title {
     font-size: 16px;
   }
 }
@@ -729,4 +762,56 @@ img.img-partner {
   z-index: 1;
   color: #bebebe;
   top: 8px;
+}
+
+
+
+
+
+
+
+
+a.search-submit-button {
+    background: none repeat scroll 0 0 #fafafa;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    color: #5e5e5e !important;
+    display: block;
+    float: right;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 8px 10px;
+    text-align: center;
+    width: 45px;
+    box-sizing: border-box;
+    height: 40px;
+}
+#searchtext {
+    overflow: hidden;
+}
+input, select, textarea {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid #eeeeee;
+    color: #5e5e5e;
+    display: block;
+    font-family: arial, sans-serif;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    height: 40px;
+}
+
+
+.img-title {
+  position: relative;
+  bottom: 107px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  width: 109px;
+  margin-left: 58px;
 }

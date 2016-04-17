@@ -16,12 +16,13 @@ class CollectionsController < ApplicationController
   end
   def index
     @collections = Collection.all
+    @top         = Collection.all.limit(3)
   end
 
   private
 
   def collection_params
-    params.require(:collection).permit([:title, :avatar])
+    params.require(:collection).permit([:title, :subtitle, :avatar])
   end
 
 end

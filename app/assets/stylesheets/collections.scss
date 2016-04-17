@@ -1,3 +1,174 @@
 // Place all the styles related to the collections controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.mid-top-collection {
+    display: flex;
+    height: 49px;
+    border-bottom: 1px solid #f2f2f2;
+    align-items: baseline;
+    padding: 7px 0 15px;
+    margin: 0 20px;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+.list-collection {
+    padding-left: 14px;
+}
+.img-colle-index {
+    width: 100%;
+    height: 100%;
+}
+.right-collection {
+    margin: 20px 0 0;
+    background-color: #fff;
+    width: 924px;
+}
+
+.img-colle-title1 {
+  position: relative;
+  top: 19px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+	color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  width: 175px;
+  left: 12px;
+}
+.img-colle-title2 {
+  position: relative;
+  top: 25px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
+	color: #ffffff;
+  text-align: center;
+  width: 175px;
+  left: 12px;
+}
+
+.each-colle {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 0 7px 30px;
+}
+
+// Ipad in portrait
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .each-colle {
+    margin: 0 12px 30px;
+  }
+  .list-collection {
+    padding-left: 19px;
+  }
+}
+
+// iPad in landscape
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .right-collection {
+    width: 770px;
+  }
+  .list-collection {
+    padding-left: 10px;
+  }
+  .each-colle {
+    margin: 0 16px 30px;
+  }
+}
+
+// iPhone 6 in portrait
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .each-colle {
+    display: block;
+    margin: 0 auto;
+  }
+  h4.font-w-200 {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+	letter-spacing: 0.6px;
+	color: #4a4a4a;
+  }
+}
+
+// iPhone 6 in landscape
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .each-colle {
+    width: 185px;
+  }
+  .img-colle-title1, .img-colle-title2 {
+    width: 170px;
+  }
+}
+
+// iPhone 5 & 5S in portrait
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .each-colle {
+    display: block;
+    margin: 0 auto;
+  }
+  h4.font-w-200 {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+	letter-spacing: 0.6px;
+	color: #4a4a4a;
+  }
+}
+
+// iPhone 5 & 5S in landscape
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .each-colle {
+    width: 152px !important;
+  }
+  .img-colle-title1, .img-colle-title2 {
+    width: 130px !important;
+  }
+}
+
+// Samsung Galaxy S5
+@media only screen
+and (min-device-width: 360px)
+and (max-device-height: 640px) and
+(orientation : landscape)
+and (-webkit-device-pixel-ratio: 3){
+  .each-colle {
+    width: 175px;
+  }
+  .img-colle-title1, .img-colle-title2 {
+    width: 160px;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-height: 640px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 2){
+  .each-colle {
+    width: 175px;
+  }
+  .img-colle-title1, .img-colle-title2 {
+    width: 160px;
+  }
+}

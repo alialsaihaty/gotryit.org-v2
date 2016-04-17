@@ -19,31 +19,4 @@
         %h4.font-w-200 Today
       .mid-second
         %ul.list-middle
-          %li
-            .mid-div
-              %row.mid-row
-                .col-xs-4.col-sm-2
-                  = image_tag("bitmap@3x2.png", class: "img-middle-div")
-                .col-xs-8.col-sm-10
-                  .col-xs-12.title
-                    %h4.h4-title Volunteer Online with the United Nations
-                  .col-xs-12.substitle
-                    %h3.h5-subtitle The most viewed talks on health & medicine
-                  .col-xs-12
-                    .col-xs-6.col-upvote
-                      %button{:class => 'btn btn-primary upvote', :type => 'button'}
-                        Upvote
-          %li
-            .mid-div
-              %row.mid-row
-                .col-xs-4.col-sm-2
-                  = image_tag("bitmap@3x2.png", class: "img-middle-div")
-                .col-xs-8.col-sm-10
-                  .col-xs-12.title
-                    %h4.h4-title Volunteer Online with the United Nations
-                  .col-xs-12.substitle
-                    %h3.h5-subtitle The most viewed talks on health & medicine
-                  .col-xs-12
-                    .col-xs-6.col-upvote
-                      %button{:class => 'btn btn-primary upvote', :type => 'button'}
-                        Upvote
+          = render :partial => '/experiences/experience', :collection => Experience.all

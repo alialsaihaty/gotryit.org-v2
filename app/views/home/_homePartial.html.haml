@@ -3,35 +3,36 @@
     %h4.font-w-200 Today
   .mid-second
     %ul.list-middle
+      = render :partial => '/experiences/experience', :collection => Experience.all
       -# = render partial: "experience", collection: @experiences
-      %li
-        .mid-div
-          .row.mid-row
-            .col-xs-4.col-lg-3
-              = image_tag("bitmap@3x2.png", class: "img-middle-div")
-            .col-xs-8.col-lg-9
-              .col-xs-12.title
-                %h2.h4-title Top 3 TED Medical Talks of All Time
-              .col-xs-12.substitle
-                %h3.h5-subtitle The most viewed talks on health & medicine
-              .col-xs-12
-                .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
-                  %button{:class => 'btn btn-primary upvote', :type => 'button'}
-                    Upvote
-      %li
-        .mid-div
-          .row.mid-row
-            .col-xs-4.col-lg-3
-              = image_tag("bitmap@3x2.png", class: "img-middle-div")
-            .col-xs-8.col-lg-9
-              .col-xs-12.title
-                %h2.h4-title Top 3 TED Medical Talks of All Time
-              .col-xs-12.substitle
-                %h3.h5-subtitle The most viewed talks on health & medicine
-              .col-xs-12
-                .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
-                  %button{:class => 'btn btn-primary upvote', :type => 'button'}
-                    Upvote
+      -# %li
+      -#   .mid-div
+      -#     .row.mid-row
+      -#       .col-xs-4.col-lg-3
+      -#         = image_tag("bitmap@3x2.png", class: "img-middle-div")
+      -#       .col-xs-8.col-lg-9
+      -#         .col-xs-12.title
+      -#           %h2.h4-title Top 3 TED Medical Talks of All Time
+      -#         .col-xs-12.substitle
+      -#           %h3.h5-subtitle The most viewed talks on health & medicine
+      -#         .col-xs-12
+      -#           .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
+      -#             %button{:class => 'btn btn-primary upvote', :type => 'button'}
+      -#               Upvote
+      -# %li
+      -#   .mid-div
+      -#     .row.mid-row
+      -#       .col-xs-4.col-lg-3
+      -#         = image_tag("bitmap@3x2.png", class: "img-middle-div")
+      -#       .col-xs-8.col-lg-9
+      -#         .col-xs-12.title
+      -#           %h2.h4-title Top 3 TED Medical Talks of All Time
+      -#         .col-xs-12.substitle
+      -#           %h3.h5-subtitle The most viewed talks on health & medicine
+      -#         .col-xs-12
+      -#           .col-xs-6.col-sm-5.col-md-3.col-lg-3.col-upvote
+      -#             %button{:class => 'btn btn-primary upvote', :type => 'button'}
+      -#               Upvote
 .col-xs-3.col-md-4.col-lg-4.hidden-sm
   .col-xs-12.right-top
     .left-top
@@ -43,12 +44,4 @@
       %h5.right-titles TOP COLLECTIONS
     .left-top2
       %ol.collection_list
-        -# = render partial: "collection", collection: @collections
-        %li
-          = image_tag("square_workplace_image_forweb.png", class: "img-responsive img-colle")
-          %h4.img-title Virtual Internships for Students
-        %li
-          = image_tag("female-trades-apprentice.png", class: "img-responsive img-colle")
-          %h4.img-title Fastest Growing STEM Careers
-        %li
-          = image_tag("bitmap@3x2.png", class: "img-responsive img-colle")
+        = render :partial => '/collections/collection', :collection => Collection.all

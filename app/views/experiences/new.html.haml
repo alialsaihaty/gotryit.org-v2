@@ -1,0 +1,8 @@
+= simple_form_for @experience do |f|
+  = f.error_notification
+  .inputs
+    = f.input :title
+    = f.input :subtitle
+    = f.input :avatar
+  .actions
+    = f.button :submit

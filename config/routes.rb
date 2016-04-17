@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :experiences
+  resources :collections
   root 'home#index'
   get 'in_person/' => 'home#in_person'
   get 'about_us/' => 'home#about_us'

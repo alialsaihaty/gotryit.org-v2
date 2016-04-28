@@ -1,19 +1,30 @@
+%header
+  .image-bg-fluid-height2
+    .col-xs-10.col-sm-10.col-xs-offset-1.col-sm-offset-2.intro2
+      %h1.p-banner-about Volunteer Online with the <br>United Nations
+      %p.p-banner2 Find placements at the top tech companies <br>in the world
+      -# %hr
 .container
-  .row
-    .col-xs-12
-      = link_to image_tag("try_it.png", class: "img-tryit2"), "https://gotryit.org", :target => "_blank"
-    .col-xs-12
-      %h4.text-center#about-title1 We connect youth to the world's best learning experiences.
-      %p.text-center#about-title2 TryIt surfaces the best new Science, Tech, <br>Engineering, and Math opportunities and <br>inspiration, every day. It’s a place for<br>students to discover, share, and engage as<br>they begin to explore career paths.
-    .col-xs-12
-      %table.center
-        %tr
-          %th.th-top#tp1 Partner
-          %th.th-top#tp2 Volunteer
-          %th.th-top#tp3 Contact
-        %tr
-          %td.td-down#tp4 partner@gotryit.org
-          %td.td-down#tp5 hr@gotryit.org
-          %td.td-down#tp6 info@gotryit.org
-    .col-xs-12
-      = image_tag("team-photos.png", class: "img-team")
+  .row.main
+    .col-xs-2.col-sm-3.col-md-2.col-lg-2.col-xs-offset-0.left.desktop
+      #close{:data => { :spy => 'affix'}}
+        %hr.left-hr
+          %ul.ul-left1
+            %li Home
+            %li
+              = link_to 'Collections', '/collections/'
+            %li Community
+    .col-xs-9.col-sm-8.col-md-9.col-lg-9.desktop
+      = render 'aboutPartial'
+    .col-xs-12.middleAbout.mobile
+      .about-divMobile
+        .mid-top1
+          %h4.font-w-200 About
+        .mid-second1
+          This is the description text which may include bullet points lorem ipsum. Latin, Greek, etc. et.c like this and this And then some more information here, and here , and here and here.
+      .experi-div
+        .mid-top2
+          %h4.font-w-200 Suggested
+        .mid-second
+          %ul.list-middleAbout
+            = render :partial => '/experiences/experience', :collection => Experience.all

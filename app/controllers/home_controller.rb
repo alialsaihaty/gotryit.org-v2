@@ -5,4 +5,6 @@ class HomeController < ApplicationController
   end
   def about_us
   end
+  def about_usv1
+  end
 end

@@ -847,7 +847,7 @@ input, select, textarea {
 .intro2 {
   position: relative;
   bottom: 91px;
-  padding-left: 128px;
+  padding-left: 22%;
   hr {
     margin-top: 0;
   }
@@ -959,6 +959,8 @@ ul.list-middleAbout {
 	border-radius: 8px;
 	background-color: #00abf0;
   margin: 6px 15px;
+  padding-left: 18px;
+  padding-top: 6px;
 }
 .tryitBtn3 {
   width: 51px;
@@ -966,6 +968,8 @@ ul.list-middleAbout {
 	border-radius: 8px;
 	background-color: #39579a;
   margin-top: 6px;
+  padding-left: 16px;
+  padding-top: 5px;
 }
 .tryitBtn4 {
     width: 126.6px;
@@ -981,4 +985,18 @@ ul.list-middleAbout {
     font-weight: 100;
     padding-top: 6px;
     font-family: 'Nunito', sans-serif;
+}
+.twitterIco {
+  width: 53%;
+}
+
+@media screen and (min-width : 1274px) and (max-width : 1415px) {
+  .intro2 {
+    padding-left: 25%;
+  }
+}
+@media screen and (min-width : 1697px){
+  .intro2 {
+    padding-left: 29%;
+  }
 }

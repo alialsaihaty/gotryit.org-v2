@@ -5,8 +5,13 @@
       %p.p-banner2 Find placements at the top tech companies <br>in the world
       %hr
       .banner-images
-        = link_to "https://gotryit.org", :class => "" do
+        = link_to "#", :class => "LinkBanner" do
           .tryitBtn
+            Try It
+        = link_to "#", :class => "LinkBanner" do
+          .tryitBtn2
+        = link_to "#", :class => "LinkBanner" do
+          .tryitBtn3
         -# = link_to image_tag("group-6.png", class: ""), "https://gotryit.org", :target => "_blank"
         -# = link_to image_tag("group-2.png", class: "img-responsive"), "http://www.facebook.com/sharer.php?u=URL", :target => "_blank"
         -# = image_tag "group-2.png", :class => ""
@@ -28,7 +33,23 @@
         .mid-top1
           %h4.font-w-200 About
         .mid-second1
-          This is the description text which may include bullet points lorem ipsum. Latin, Greek, etc. et.c like this and this And then some more information here, and here , and here and here.
+          .hidden-xs.col-sm-4
+            = image_tag("bitmap@3x2.png", class: "img-partner2")
+            = link_to "https://gotryit.org", :class => "LinkBanner" do
+              .tryitBtn4
+                Learn More
+          .col-xs-12.col-sm-8.colAbout
+            %p.p1
+              Be an online activist for the U.N. Volunteer for international development organizations all over the world–from home!<br><br> The United Nations supports organizations working for peace and development by connecting them with online volunteers.
+              <br><br>
+              etc. etc. etc.
+              <br><br>
+            %p.p2
+              Be an online activist for the U.N. Volunteer for international development organizations all over the world–from home!
+              <br><br>
+              The United Nations supports organizations working for peace and development by connecting them with online volunteers.
+              <br><br>
+              etc. etc. etc.
       .experi-div
         .mid-top2
           %h4.font-w-200 Suggested

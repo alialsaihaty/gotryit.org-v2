@@ -592,9 +592,12 @@ ul.list-middle {
   }
 }
 
-img.img-partner {
+.img-partner, .img-partner2  {
   @include center(0 auto, block);
   width: 68%;
+}
+.img-partner2 {
+  width: 100%;
 }
 
 
@@ -701,6 +704,17 @@ img.img-partner {
   }
   .p-banner2 {
     font-size: 13px;
+  }
+  .about-divMobile {
+    padding-right: 0 !important;
+    height: 300px !important;
+  }
+  .intro2 {
+    padding-left: 21px !important;
+    bottom: 70px !important;
+  }
+  .p2 {
+    display: none;
   }
 }
 
@@ -851,6 +865,24 @@ input, select, textarea {
 }
 .about-div {
   background-color: #fff;
+  height: 500px;
+  .colAbout {
+    padding: 0 0 0 10px;
+  }
+  .p1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+  	letter-spacing: 0.5px;
+  	color: #4a4a4a;
+    font-weight: 100;
+  }
+  .p2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+  	letter-spacing: 0.5px;
+  	color: #4a4a4a;
+    font-weight: 100;
+  }
 }
 .experi-div {
 
@@ -873,6 +905,7 @@ input, select, textarea {
     background-color: #fff;
     padding-right: 100px;
     padding-left: 6px;
+    height: 500px;
 }
 
 ul.list-middleAbout {
@@ -890,15 +923,56 @@ ul.list-middleAbout {
 
 }
 .banner-images {
-  // display: inline-flex;
+  display: inline-flex;
   img {
     margin-right: 20px;
     // display: block;
     // vertical-align: top;
   }
+  a:hover {
+    text-decoration: none;
+  }
 }
 .tryitBtn {
-    width: 92px;
+  width: 92px;
+  height: 37px;
+  background-color: #5190e0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #bbb6b6;
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding-top: 3px;
+  font-family: 'Nunito', sans-serif;
+}
+.tryitBtn2 {
+  width: 51px;
+	height: 31.5px;
+	border-radius: 8px;
+	background-color: #00abf0;
+  margin: 6px 15px;
+}
+.tryitBtn3 {
+  width: 51px;
+	height: 31.5px;
+	border-radius: 8px;
+	background-color: #39579a;
+  margin-top: 6px;
+}
+.tryitBtn4 {
+    width: 126.6px;
     height: 37px;
-    background-color: #5190e0;
+    margin-top: 23px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #bbb6b6;
+    font-size: 18px;
+	  letter-spacing: 0.6px;
+    font-weight: 100;
+    padding-top: 6px;
+    font-family: 'Nunito', sans-serif;
 }

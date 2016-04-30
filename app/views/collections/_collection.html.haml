@@ -1,5 +1,6 @@
 = link_to "#", :class => "link" do
-  .each-colle{:style => "background: url(#{image_path "#{collection.avatar}"}) center no-repeat; background-size: 100%;"}
+  .each-colle
+    = image_tag collection.avatar.url, :class => "img-responsive img-collection"
     %h3.img-colle-title1
       = collection.title
     %h4.img-colle-title2

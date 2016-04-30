@@ -73,6 +73,11 @@ img.img-colle {
     @include center(0 auto, block);
     margin-bottom: 10px;
 }
+img.img-collection {
+    @include size(200px);
+    @include center(0 auto, block);
+    margin-bottom: 10px;
+}
 hr.left-hr {
     @include marg(0 0 7px 76px);
     width: 40px;

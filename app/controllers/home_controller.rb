@@ -7,4 +7,6 @@ class HomeController < ApplicationController
   end
   def about_usv1
   end
+  def collection_description
+  end
 end

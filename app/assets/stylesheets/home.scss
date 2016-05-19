@@ -719,8 +719,15 @@ ul.list-middle {
     padding-left: 21px !important;
     bottom: 70px !important;
   }
+  .intro3 {
+    padding-left: 21px !important;
+    bottom: 70px !important;
+  }
   .p2 {
     display: none;
+  }
+  .p-banner-about {
+    font-size: 25px !important;
   }
 }
 
@@ -836,7 +843,17 @@ input, select, textarea {
   margin-left: 58px;
 }
 
-
+// collection description page
+ .intro3 {
+   position: relative;
+   bottom: 91px;
+   padding-left: 22%;
+  //  padding-left: 4%;
+   padding-right: 35px;
+   hr {
+     margin-top: 0;
+   }
+ }
 
 
 
@@ -852,11 +869,14 @@ input, select, textarea {
     margin-top: 0;
   }
 }
-.image-bg-fluid-height2 {
-    background: image-url("bitmap-copy@3x.png");
+.image-bg-fluid-height2, .image-bg-fluid-height3 {
+    background: image-url("bitma-4@3x.png");
     background-size: auto 100%;
     padding: 100px 0;
     height: 100%;
+}
+.image-bg-fluid-height3 {
+    background: image-url("bitmap-copy@3x.png");
 }
 .p-banner-about {
     font-size: 28px;
@@ -898,6 +918,9 @@ input, select, textarea {
 }
 .mid-top2 {
   @include topDiv(flex, 49px, 1px solid #f2f2f2, baseline, 7px 0 15px, 0 20px, space-between);
+}
+.mid-top2 {
+  @include topDiv(flex, 20px, 1px solid #f2f2f2, baseline, 7px 0 15px, 0 20px, space-between);
 }
 .mid-second1 {
   padding: 22px;
@@ -994,9 +1017,15 @@ ul.list-middleAbout {
   .intro2 {
     padding-left: 25%;
   }
+  .intro3 {
+    padding-left: 25%;
+  }
 }
 @media screen and (min-width : 1697px){
   .intro2 {
+    padding-left: 29%;
+  }
+  .intro3 {
     padding-left: 29%;
   }
 }

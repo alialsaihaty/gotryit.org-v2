@@ -1,0 +1,13 @@
+.col-xs-8.col-sm-12.col-md-8.col-lg-8.middle_about1
+  .about-div
+    .mid-top2
+    .mid-second1
+      %ul.list-middle
+        = render :partial => '/experiences/experience', :collection => Experience.all
+.col-xs-3.col-md-4.col-lg-4.hidden-sm
+  .col-xs-12.right-top2
+    .left-top
+      %h5.right-titles MORE COLLECTIONS
+    .left-top2
+      %ol.collection_list
+        = render :partial => '/collections/top', :collection => Collection.all

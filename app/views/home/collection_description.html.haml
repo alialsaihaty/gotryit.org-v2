@@ -1,0 +1,31 @@
+%header
+  .image-bg-fluid-height2
+    .intro3
+      %h1.p-banner-about Collection: Careers in <br>Health Sciences
+      %p.p-banner2 This is the tagline description of the <br> collection
+      %hr
+      .banner-images
+        = link_to "#", :class => "LinkBanner" do
+          .tryitBtn2
+            = image_tag "icon-twitter-white.png", :class => "twitterIco"
+        = link_to "#", :class => "LinkBanner" do
+          .tryitBtn3
+            = image_tag "facebook_f_white.png", :class => "twitterIco"
+.container
+  .row.main
+    .col-xs-2.col-sm-3.col-md-2.col-lg-2.col-xs-offset-0.left.desktop
+      #close{:data => { :spy => 'affix'}}
+        %hr.left-hr
+          %ul.ul-left1
+            %li Home
+            %li
+              = link_to 'Collections', '/collections/'
+            %li Community
+    .col-xs-9.col-sm-8.col-md-9.col-lg-9.desktop
+      = render 'descriptionPartial'
+    .col-xs-12.middleAbout.mobile
+      .about-divMobile
+        .mid-top3
+        .mid-second1
+          %ul.list-middle
+            = render :partial => '/experiences/experience', :collection => Experience.all

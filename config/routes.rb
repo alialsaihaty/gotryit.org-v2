@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   resources :experiences
   resources :collections
+
   root 'home#index'
+  get 'collection_description/' => 'home#collection_description'
   get 'in_person/' => 'home#in_person'
   get 'about_us/' => 'home#about_us'
   get 'about_usv1/' => 'home#about_usv1'
